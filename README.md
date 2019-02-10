@@ -28,8 +28,12 @@ More details can be found here: https://stackoverflow.com/questions/57483/what-a
 
 
 ### Overload Resolution
-todo
-
+Deciding which function overload to choose is actually very complicated ([cppreference](https://en.cppreference.com/w/cpp/language/overload_resolution "CppReference: Overload Resolution")), but in essence it is based on a scoring system.  The scoring from best to least:
+1. Exact match
+2. Type promotion
+3. Type conversion
+4. User defined type conversion
+The overall score of a function overload is the lowest single score of any of its parameters.
 
 
 ## Patterns
