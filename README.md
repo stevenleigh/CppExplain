@@ -28,13 +28,32 @@ More details can be found here: https://stackoverflow.com/questions/57483/what-a
 
 
 ### Overload Resolution
-Deciding which function overload to choose is actually very complicated ([cppreference](https://en.cppreference.com/w/cpp/language/overload_resolution "CppReference: Overload Resolution")), but in essence it is based on a scoring system.  The scoring from best to least:
+Deciding which function overload to choose is actually very complicated ([cppreference](https://en.cppreference.com/w/cpp/language/overload_resolution "CppReference: Overload Resolution")), but luckily we don't need to memorize every rule to have a good idea which overload will be chosen in common cases.  
+
+In essence overload resolution is based on a scoring system roughly as follows, from best to worst:
 1. Exact match
 2. Type promotion
 3. Type conversion
 4. User defined type conversion
+
 The overall score of a function overload is the lowest single score of any of its parameters.
 
+A type promotion happens when a type can be changed to another type without losing any information.  Eg. these are valid type promotions: `char->int`, `float->double`, but these are not: `int->char`, `double->float`.
+
+A type conversion happens when a type is changed to another type that could lose information.  Eg. these are type conversions: `int->char`, `double->float`, `int->float`.
+
+A user defined type conversion is when a user defined type has a conversion operator defined.  Eg.
+```cpp
+struct MyFraction{
+  operator int(){
+    return _num/_den;
+    }
+  int _num;
+  int _den;
+}
+
+int result = MyFraction{10, 5};  // MyFraction will convert itself into an int, in this case 2.
+```
 
 ## Patterns
 ### Strategy
