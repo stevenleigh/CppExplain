@@ -22,7 +22,7 @@ More details can be found here: https://stackoverflow.com/questions/57483/what-a
 
 ## Patterns
 ### Strategy
-Choose between several algorithms at runtime.
+The strategy pattern allows chosing between several algorithms at runtime.
 
 Here is an example of using the strategy pattern to select between various sorting algorithms at runtime:
 ```cpp
@@ -86,7 +86,7 @@ int main(){
 
 ## Anti-Patterns
 ### Poltergeist
-A class that does almost nothing besides forward calls to another class.  Eg.
+A poltergeist class is a class that does almost nothing besides forward calls to another class.  Eg.
 
 ```cpp
 class Useful{
