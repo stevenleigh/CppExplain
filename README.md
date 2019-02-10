@@ -99,21 +99,21 @@ A facade is a simpler interface to another interface.  Best used when the other 
 ```cpp
 class ApiIAmForcedToUse{
 public:
-  void getter_First_Name_Of_Owner(char * name);
-  void getter_Name_Of_Owner_Last(char * name);
-  void getter_Owners_Dogs_Name(char * name);
+  void getter_First_Name_Of_Owner(char* name);
+  void getter_Name_Of_Owner_Last(char* name);
+  void getter_Owners_Dogs_Name(char* name);
 };
 
 class NiceApiFacade{
 public:
   string getOwnerFirstName(){
-    char * name;
+    char* name;
     _api.getter_First_Name_Of_Owner(name);
     return string(name);
   }
   
   string getOwnerLastName(){
-    char * name;
+    char* name;
     _api.getter_Name_Of_Owner_Last(name);
     return string(name);
   }
