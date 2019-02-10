@@ -1,5 +1,5 @@
 # CppExplain
-The goal of these explanations is to provide basic understanding of common C++ ideas with which a developer could begin using these ideas productively.
+The goal of these explanations is to provide basic understanding of common C++ ideas with which a developer could begin using them productively.
 
 
 <!-- One windows use alt+255 to add a space at the beginning of a line -->
