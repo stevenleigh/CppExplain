@@ -3,6 +3,7 @@
 ## Table of Contents
 __[Concepts](#Concepts)<br>__
   [Pointers-vs-References](#Pointers-vs-References)<br>
+  [Argument Type Deduction](#Argument-Type-Deduction)<br>
 __[Patterns](#Patterns)<br>__
   [Strategy](#Strategy)<br>
 __[Anti-Patterns](#Anti-Patterns)<br>__
@@ -20,6 +21,10 @@ __A:__ "Under the hood" they are both the same thing.  They will both be compile
 
 More details can be found here: https://stackoverflow.com/questions/57483/what-are-the-differences-between-a-pointer-variable-and-a-reference-variable-in
 
+---
+
+### Argument Type Deduction
+todo
 ---
 
 ## Patterns
