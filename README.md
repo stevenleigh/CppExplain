@@ -128,6 +128,41 @@ private:
 
 ```
 
+### Singleton
+Enforce that only a single instance of an object is created.  Useful for example when developing with hardware.  If there is only one physical piece of hardware in the system then it can make sense to enforce that only a single object in software exists to represent it.
+```cpp
+class SteeringWheel{
+public:
+  static SteeringWheel& getInstance(){
+    static SteeringWheel _instance;
+    return _instance;
+  }
+  
+  void setAngle(int newAngle){
+    _angle = newAngle;
+  }
+
+private:
+  // Declare constructors private so another copy cannot be made
+  SteeringWheel(){};
+  SteeringWheel(SteeringWheel const&) = delete;
+  void operator=(SteeringWheel const&) = delete;
+  
+  int _angle;
+}
+
+
+int main(){
+  SteeringWheel& steeringWheel = SteeringWheel::getInstance();  // Always returns the same instance.
+  steeringWheel.setAngle(10);
+}
+```
+__CAUTION:__ This is sometimes considered an anti-pattern mostly because it can lead to bugs in testing.  All tests will use the same singleton, so it is easy for one test to pollute another if the singleton's state is not reset.  Resetting the state can be done using placement new:
+```cpp
+static void reset(){
+  new(_instance) SteeringWheel;
+}
+```
 
 ## Anti-Patterns
 ### Poltergeist
