@@ -1,6 +1,6 @@
 # CppExplain
 
-### Table of Contents
+## Table of Contents
 **[Patterns](#Patterns)**<br>
 **[Anti-Patterns](#Anti-Patterns)**<br>
 
@@ -67,6 +67,7 @@ int main(){
 }
 
 ```
+---
 
 ## Anti-Patterns
 ### Poltergeist
@@ -109,3 +110,4 @@ private:
 };
 ```
 __HOW TO FIX:__  Simply remove the poltergeist class and use the forwarded class instead.
+---
