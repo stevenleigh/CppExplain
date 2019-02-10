@@ -1,7 +1,9 @@
 # CppExplain
 
 ## Patterns
-### Poltergeist (Anti-Pattern)
+
+## Anti-Patterns
+### Poltergeist
 A class that does almost nothing besides forward calls to another class.  Eg.
 
 ```cpp
@@ -40,4 +42,4 @@ private:
   Foo _foo;
 };
 ```
-_FIX:_  Remove the poltergeist class and use the forwarded class instead.
+__HOW TO FIX:__  Simply remove the poltergeist class and use the forwarded class instead.
