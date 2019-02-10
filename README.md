@@ -7,6 +7,7 @@ __[Concepts](#Concepts)<br>__
   [Argument Type Deduction](#Argument-Type-Deduction)<br>
 __[Patterns](#Patterns)<br>__
   [Strategy](#Strategy)<br>
+  [Facade](#Facade)<br>
 __[Anti-Patterns](#Anti-Patterns)<br>__
   [Poltergeist](#Poltergeist)<br>
 
@@ -89,6 +90,11 @@ int main(){
 }
 
 ```
+
+---
+
+### Facade
+todo
 
 ---
 
