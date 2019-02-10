@@ -28,7 +28,7 @@ More details can be found here: https://stackoverflow.com/questions/57483/what-a
 
 
 ### Overload Resolution
-Deciding which function overload to choose is actually very complicated ([cppreference](https://en.cppreference.com/w/cpp/language/overload_resolution "CppReference: Overload Resolution")), but luckily we don't need to memorize every rule to have a good idea which overload will be chosen in common cases.  
+Deciding which function overload to choose is actually very complicated ([cppreference](https://en.cppreference.com/w/cpp/language/overload_resolution "CppReference: Overload Resolution")), but luckily we don't need to know every rule to have a good idea which overload will be chosen in common cases.  
 
 In essence overload resolution is based on a scoring system roughly as follows, from best to worst:
 1. Exact match
