@@ -106,16 +106,16 @@ public:
 
 class NiceApiFacade{
 public:
-  string getOwnerFirstName(){
+  std::string getOwnerFirstName(){
     char* name;
     _api.getter_First_Name_Of_Owner(name);
-    return string(name);
+    return std::string(name);
   }
   
-  string getOwnerLastName(){
+  std::string getOwnerLastName(){
     char* name;
     _api.getter_Name_Of_Owner_Last(name);
-    return string(name);
+    return std::string(name);
   }
   
   // If we don't need owner's dog's name then no need to expose it
