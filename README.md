@@ -1,5 +1,6 @@
 # CppExplain
 
+<!-- One windows use alt+255 to add a space at the beginning of a line -->
 ## Table of Contents
 __[Concepts](#Concepts)<br>__
   [Pointers-vs-References](#Pointers-vs-References)<br>
@@ -8,7 +9,6 @@ __[Patterns](#Patterns)<br>__
   [Strategy](#Strategy)<br>
 __[Anti-Patterns](#Anti-Patterns)<br>__
   [Poltergeist](#Poltergeist)<br>
-
 
 ## Concepts
 ### Pointers-vs-References
@@ -25,6 +25,7 @@ More details can be found here: https://stackoverflow.com/questions/57483/what-a
 
 ### Argument Type Deduction
 todo
+
 ---
 
 ## Patterns
