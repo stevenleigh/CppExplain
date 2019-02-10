@@ -20,6 +20,8 @@ __A:__ "Under the hood" they are both the same thing.  They will both be compile
 
 More details can be found here: https://stackoverflow.com/questions/57483/what-are-the-differences-between-a-pointer-variable-and-a-reference-variable-in
 
+---
+
 ## Patterns
 ### Strategy
 The strategy pattern allows chosing between several algorithms at runtime.
