@@ -103,7 +103,6 @@ public:
   }
   void funcC(){
     //some useful computation
-    return val;
   }
 };
 
