@@ -3,7 +3,7 @@
 <!-- One windows use alt+255 to add a space at the beginning of a line -->
 ## Table of Contents
 __[Concepts](#Concepts)<br>__
-  [Pointers-vs-References](#Pointers-vs-References)<br>
+  [Pointers vs References](#Pointers-vs-References)<br>
   [Argument Type Deduction](#Argument-Type-Deduction)<br>
 __[Patterns](#Patterns)<br>__
   [Strategy](#Strategy)<br>
@@ -11,7 +11,7 @@ __[Anti-Patterns](#Anti-Patterns)<br>__
   [Poltergeist](#Poltergeist)<br>
 
 ## Concepts
-### Pointers-vs-References
+### Pointers vs References
 __Q:__ What is the differnce between a pointer and a reference and which one should be used?
 
 __A:__ "Under the hood" they are both the same thing.  They will both be compiled to a value that stores a memory address.  In general a reference should be used whenever possible because it has more restricted behaviour by the compiler.  Eg. These are operations you can't do with a reference, but can do with a pointer:
