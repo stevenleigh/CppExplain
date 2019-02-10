@@ -67,6 +67,7 @@ int main(){
 }
 
 ```
+
 ---
 
 ## Anti-Patterns
@@ -110,4 +111,5 @@ private:
 };
 ```
 __HOW TO FIX:__  Simply remove the poltergeist class and use the forwarded class instead.
+
 ---
