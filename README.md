@@ -11,8 +11,9 @@ __[Anti-Patterns](#Anti-Patterns)<br>__
 
 ## Concepts
 ### Pointers-vs-References
-Q: What is the differnce between a pointer and a reference and which one should be used?
-A: "Under the hood" they are both the same thing.  They will both be compiled to a value that stores a memory address.  In general a reference should be used whenever possible because it has more restricted behaviour.  Eg. These are operations you can do with a pointer, but not a reference:
+__Q:__ What is the differnce between a pointer and a reference and which one should be used?
+
+__A:__ "Under the hood" they are both the same thing.  They will both be compiled to a value that stores a memory address.  In general a reference should be used whenever possible because it has more restricted behaviour.  Eg. These are operations you can do with a pointer, but not a reference:
  * Assign it to `nullptr`
  * Change what it points to
  * Pointer arithmetic
