@@ -22,12 +22,12 @@ __A:__ "Under the hood" they are both the same thing.  They will both be compile
 
 More details can be found here: https://stackoverflow.com/questions/57483/what-are-the-differences-between-a-pointer-variable-and-a-reference-variable-in
 
----
+
 
 ### Argument Type Deduction
 todo
 
----
+
 
 ## Patterns
 ### Strategy
@@ -91,7 +91,7 @@ int main(){
 
 ```
 
----
+
 
 ### Facade
 A facade is a simpler interface to another interface.  Best used when the other interface is more complex than necessary, or awkard to use.  Eg.
@@ -126,7 +126,6 @@ private:
 
 ```
 
----
 
 ## Anti-Patterns
 ### Poltergeist
@@ -169,4 +168,3 @@ private:
 ```
 __HOW TO FIX:__  Simply remove the poltergeist class and use the forwarded class instead.
 
----
