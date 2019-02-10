@@ -10,6 +10,7 @@ __[Concepts](#Concepts)<br>__
 __[Patterns](#Patterns)<br>__
   [Strategy](#Strategy)<br>
   [Facade](#Facade)<br>
+  [Singleton](#Singleton)<br>
 __[Anti-Patterns](#Anti-Patterns)<br>__
   [Poltergeist](#Poltergeist)<br>
 
