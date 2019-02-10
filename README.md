@@ -4,6 +4,7 @@
  __[Patterns](#Patterns)<br>__
  [Strategy](#Strategy)<br>
  __[Anti-Patterns](#Anti-Patterns)<br>__
+  [Poltergeist](#Poltergeist)<br>
 
 
 ## Patterns
