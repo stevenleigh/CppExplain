@@ -1,9 +1,9 @@
 # CppExplain
 
 ## Table of Contents
- *[Patterns](#Patterns)<br>
- **[Strategy](#Strategy)<br>
- *[Anti-Patterns](#Anti-Patterns)<br>
+ __[Patterns](#Patterns)<br>__
+ [Strategy](#Strategy)<br>
+ __[Anti-Patterns](#Anti-Patterns)<br>__
 
 
 ## Patterns
