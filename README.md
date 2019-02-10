@@ -4,7 +4,7 @@
 ## Table of Contents
 __[Concepts](#Concepts)<br>__
   [Pointers vs References](#Pointers-vs-References)<br>
-  [Argument Type Deduction](#Argument-Type-Deduction)<br>
+  [Overload Resolution](#Overload-Resolution)<br>
 __[Patterns](#Patterns)<br>__
   [Strategy](#Strategy)<br>
   [Facade](#Facade)<br>
@@ -24,7 +24,7 @@ More details can be found here: https://stackoverflow.com/questions/57483/what-a
 
 
 
-### Argument Type Deduction
+### Overload Resolution
 todo
 
 
