@@ -14,21 +14,21 @@ class ISort{
 class SortQuick: public ISort{
 public:
   void sort(vector<int>& toSort) override{
-    // sort using quicksort...
+    // sort using quicksort ...
   }
 };
 
 class SortBubble: public ISort{
 public:
  void sort(vector<int>& toSort) override{
-    // sort using bubble sort
+    // sort using bubble sort ...
   }
 };
 
 class SortDistributed: public ISort{
 public:
  void sort(vector<int>& toSort) override{
-    // use a distrubted sort
+    // use a distrubted sort ...
   }
 };
 
