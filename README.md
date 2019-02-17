@@ -54,6 +54,16 @@ struct MyFraction{
 
 int result = MyFraction{10, 5};  // MyFraction will convert itself into an int, in this case 2.
 ```
+### SFINAE
+An acronym standing for Substitution Failure Is Not An Error.  It is primarily a tool that can be used to disable templates for specific types.  Eg. say we have a function to convert degrees to radians:
+'''cpp
+template<typename T>
+T deg2rad(const T deg){
+  constexpr T factor = 3.14159 / 180;
+  return deg * factor;  
+}
+'''
+
 
 ## Patterns
 ### Strategy
