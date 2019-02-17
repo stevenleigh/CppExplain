@@ -63,8 +63,9 @@ T deg2rad(const T deg){
   constexpr T factor = 3.14159 / 180;
   return deg * factor;  
 }
+```
+This works well when called with a floating point type `deg2rad(45.0f);  // returns 0.785` , but gives likely unde
 
-deg2rad(45.0f);  // returns 0.785
 deg2rad(45);  // returns 0 ?
 ```
 
