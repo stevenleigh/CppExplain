@@ -7,6 +7,7 @@ The goal of these explanations is to provide basic understanding of common C++ i
 __[Concepts](#Concepts)<br>__
   [Pointers vs References](#Pointers-vs-References)<br>
   [Overload Resolution](#Overload-Resolution)<br>
+  [SFINAE](#SFINAE)<br>
 __[Patterns](#Patterns)<br>__
   [Strategy](#Strategy)<br>
   [Facade](#Facade)<br>
@@ -56,13 +57,13 @@ int result = MyFraction{10, 5};  // MyFraction will convert itself into an int, 
 ```
 ### SFINAE
 An acronym standing for Substitution Failure Is Not An Error.  It is primarily a tool that can be used to disable templates for specific types.  Eg. say we have a function to convert degrees to radians:
-'''cpp
+```cpp
 template<typename T>
 T deg2rad(const T deg){
   constexpr T factor = 3.14159 / 180;
   return deg * factor;  
 }
-'''
+```
 
 
 ## Patterns
