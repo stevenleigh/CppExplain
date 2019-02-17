@@ -63,6 +63,9 @@ T deg2rad(const T deg){
   constexpr T factor = 3.14159 / 180;
   return deg * factor;  
 }
+
+deg2rad(45.0f);  // returns 0.785
+deg2rad(45);  // returns 0 ?
 ```
 
 
